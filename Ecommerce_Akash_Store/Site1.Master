@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Ecommerce_Akash_Store.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Fashion Store</title>
+    <link href="style.css" rel="stylesheet" />
+     <script src="https://cdn.tailwindcss.com"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+            <section id="header">
+                <a href="#">
+                    <img src="images1/hd%20logo.png" class="logo" /></a>
+                <div>
+                    <ul id="navbar">
+                        <li><a href="index.html">Home </a></li>
+                        <li><a href="shop.html">Shop </a></li>
+                        <li><a href="blog.html">Blog </a></li>
+                        <li><a href="about.html">About </a></li>
+                        <li><a href="contact.html">Contact us </a></li>
+                        <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                        <li>
+                            <asp:Button ID="Button1" runat="server" Text="Button" class="normal" /></li>
+                        <li>
+                            <asp:Button ID="Button2" runat="server" Text="Button" class="normal" /></li>
+
+                        <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+                    </ul>
+                </div>
+                <div id="mobile">
+                    <!-- <a href="cart.html"><i class="fa-solid fa-cart-shopping cart"></i> </a> -->
+                    <i id="bar" class="fa-solid fa-bars"></i>
+                </div>
+            </section>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
